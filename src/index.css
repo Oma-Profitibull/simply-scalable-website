@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 225 33% 3%;
+    --foreground: 0 0% 100%;
+    --card: 222 33% 5%;
+    --card-foreground: 0 0% 100%;
+    --popover: 222 33% 5%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 40 55% 58%;
+    --primary-foreground: 225 33% 3%;
+    --secondary: 220 30% 19%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 20% 25%;
+    --muted-foreground: 215 16% 55%;
+    --accent: 220 30% 19%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 30% 19%;
+    --input: 220 30% 19%;
+    --ring: 40 55% 58%;
+    --radius: 0.625rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #06080F;
+  color: #FFFFFF;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+h1 {
+  font-size: clamp(56px, 7.7vw, 99px) !important;
+  line-height: 1.19 !important;
+  letter-spacing: normal !important;
+}
+
+h2 {
+  font-size: clamp(31px, 3vw, 40px) !important;
+  line-height: 1.2 !important;
+  letter-spacing: normal !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 2px solid #D4A853;
+  outline-offset: 2px;
+}
+
+.backface-hidden {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
